@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiennarah Secretaria | Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{
+font-family:'Segoe UI',sans-serif;
+color:#fff;
+background:#0f172a;
+overflow-x:hidden;
+}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 20% 20%, rgba(124,58,237,.35), transparent 30%),
+radial-gradient(circle at 80% 30%, rgba(37,99,235,.35), transparent 30%),
+radial-gradient(circle at 50% 80%, rgba(168,85,247,.25), transparent 35%);
+z-index:-1;
+}
+nav{
+position:fixed;top:0;width:100%;
+display:flex;justify-content:space-between;align-items:center;
+padding:20px 8%;
+background:rgba(15,23,42,.7);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+.logo{font-weight:700;font-size:1.5rem}
+nav ul{display:flex;gap:25px;list-style:none}
+nav a{text-decoration:none;color:white}
+section{padding:100px 10%}
+.hero{
+min-height:100vh;display:flex;align-items:center;justify-content:space-between;gap:50px
+}
+.hero-text{flex:1}
+.hero-text h1{font-size:4rem;line-height:1.1;margin:15px 0}
+.typing{
+color:#93c5fd;
+overflow:hidden;
+white-space:nowrap;
+border-right:3px solid #93c5fd;
+width:0;
+animation:typing 4s steps(30,end) forwards, blink .8s infinite;
+}
+@keyframes typing{to{width:25%}}
+@keyframes blink{50%{border-color:transparent}}
+.hero-text p{color:#cbd5e1;line-height:1.8;max-width:600px}
+.hero-image img{
+width:340px;height:340px;object-fit:cover;border-radius:30px;
+animation:float 4s ease-in-out infinite;
+box-shadow:0 20px 60px rgba(124,58,237,.4);
+}
+@keyframes float{50%{transform:translateY(-15px)}}
+.btn{
+display:inline-block;margin-top:25px;padding:14px 28px;
+background:linear-gradient(135deg,#7c3aed,#2563eb);
+color:white;text-decoration:none;border-radius:12px;font-weight:700;
+position:relative;overflow:hidden;
+}
+.btn:before{
+content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;
+background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+}
+.btn:hover:before{left:100%;transition:.8s}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.card,.stat,.project,.contact-card,.timeline-item{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+}
+.stat{padding:20px;text-align:center}
+.stat h2{color:#93c5fd}
+.title{text-align:center;font-size:2.4rem;margin-bottom:40px}
+.about,.skills,.projects,.contact-grid{display:grid;gap:20px}
+.about .card,.project,.contact-card{padding:25px}
+.skills{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.skill{padding:20px}
+.bar{height:8px;background:#334155;border-radius:10px;margin-top:10px}
+.fill{height:100%;background:linear-gradient(90deg,#7c3aed,#2563eb);border-radius:10px}
+.featured{
+padding:30px;
+background:rgba(255,255,255,.08);
+border-radius:25px;
+margin-bottom:25px;
+}
+.project-img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px 20px 0 0;
+}
+.projects{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.project:hover{transform:translateY(-8px);transition:.3s}
+.timeline{max-width:800px;margin:auto}
+.timeline-item{padding:20px;margin-bottom:20px}
+.contact-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.contact-card{text-align:center}
+.contact-card a:hover{
+    color:#c084fc;
+}
+footer{text-align:center;padding:30px;color:#cbd5e1}
+@media(max-width:900px){
+.hero{flex-direction:column-reverse;text-align:center}
+.hero-text h1{font-size:2.8rem}
+.stats{grid-template-columns:1fr}
+.hero-image img{width:250px;height:250px}
+nav{flex-direction:column;gap:10px}
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">SHIENNARAH</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+<!-- LEFT SIDE -->
+<div class="hero-text">
+<div class="typing">Information Systems Student</div>
+<h1>Kumusta • Hello • Hola </h1>
+<p>Hi, I'm Shiennarah Secretaria. I am passionate about system development, user experience design, and creating technology-driven solutions that make processes more efficient and accessible.</p>
+<a href="https://github.com/iamnaaarrraaaaa01" class="btn">Visit My GitHub</a>
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="hero-image">
+<img src="PROFILE.png" alt="Profile">
+</div>
+
+</section>
+
+<section id="about">
+<h2 class="title">Who I Am</h2>
+<div class="about">
+<div class="card">
+<p>I am a second-year Information Systems student at Davao del Norte State College with a strong interest in technology, system development, and user interface design. I enjoy creating simple yet effective digital solutions that improve user experience and solve real-world problems.</p>
+<br>
+<p>Throughout my academic journey, I have developed projects such as working prototype called Barangay Food Request System, conducted research on e-learning systems, and designed network infrastructures using Cisco Packet Tracer. These experiences helped me strengthen my analytical thinking, technical skills, and attention to detail. </p>
+<br>
+<p>I am a motivated and adaptable individual who is eager to learn, grow, and apply my knowledge in real-world IT environments. My goal is to continuously improve my skills and become a competent IT professional in the future.  </p>
+</div>
+<br>
+<h3>EDUCATION</h3>
+<div class="about">
+<div class="card">
+
+
+<p>Bachelor of Science  Information Systems</p>
+
+</P>Davao del Norte State College (2024–2028)</p>
+</div>
+ 
+</div>
+</section>
+
+
+<section id="skills">
+<h2 class="title">Technical Skills</h2>
+<div class="skills">
+<div class="card skill">🌐 HTML<div class="bar"><div class="fill" style="width:75%"></div></div></div>
+<div class="card skill">🎨 CSS<div class="bar"><div class="fill" style="width:70%"></div></div></div>
+<div class="card skill">💻🎨User Interface (UI) Design<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+<div class="card skill">📝 Microsoft Office (Word, Excel, PowerPoint)<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+<div class="card skill">📊Basic Microsoft Excel (data entry, formatting, simple formulas)<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="title">Soft Skills</h2>
+<div class="skills">
+<div class="card skill">💡Critical Thinking<div class="bar"><div class="fill" style="width:75%"></div></div></div>
+<div class="card skill">🤝 Communication Skills<div class="bar"><div class="fill" style="width:70%"></div></div></div>
+<div class="card skill">🔍Attention to Detail<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+<div class="card skill">🧩Problem Solving<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+<div class="card skill">⚙️Adaptability<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+</div>
+</section>
+
+
+<section id="projects">
+<h2 class="title">Projects</h2>
+
+<center>
+<p>A simple UI design showcasing clean layout, user-friendly structure, and organized visual elements.</p>
+</center>
+<br>
+<br>
+
+<div class="projects">
+<div class="project">
+     <img src="Portfolio SS.png"
+         alt="Portfolio Website"
+         class="project-img">
+
+
+<div style="padding:20px">
+<h3>Portfolio Website</h3>
+<p> Developed a personal portfolio  using HTML .</p>
+</div>
+</div>
+
+<div class="project">
+     <img src="Project.png"
+         alt="Barangay Food Request System"
+         class="project-img">
+
+<div style="padding:20px">
+<h3>Barangay Food Request System</h3>
+<p>A Figma-based working prototype that streamlines
+     food assistance requests and tracking for residents 
+     and administrators, making community support more organized and accessible.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+
+    <h2 class="title">Let's Connect</h2>
+
+    <p class="contact-intro">
+        <p style="text-align:center;">
+        I'm currently open to  collaborations,
+        and opportunities to grow my skills in Information Systems,
+        UI/UX Design, and Web Development.</p>
+
+       
+    
+
+    <br>
+<p style="text-align:center;">
+        Feel free to reach out.</p>
+    </p>
+    
+ <br> 
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <h3>📧 Email</h3>
+
+            <a href="mailto:sshiennarah@gmail.com">
+                sshiennarah@gmail.com
+            </a>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>💻 GitHub</h3>
+
+            <a href="https://github.com/iamnaaarrraaaaa01" target="_blank">
+                Visit My GitHub
+            </a>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>💼 LinkedIn</h3>
+
+            <a href="https://www.linkedin.com/in/shiennarah-secretaria-6039a640a" target="_blank">
+                View My LinkedIn
+            </a>
+
+        </div>
+ <div class="contact-card">
+
+            <h3> 📞 Cellphone Number</h3>
+
+            <a href="09668371242" target="_blank">
+                09668371242
+            </a>
+</div>
+
+        <div class="contact-card">
+
+            <h3>📍 Location</h3>
+
+            <a href="https://maps.google.com/?q=Panabo+City+Davao+del+Norte" target="_blank">
+                Panabo City, Davao del Norte
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+© 2026 SHIENNARAH SECRETARIA
+</footer>
+
+</body>
+</html>
